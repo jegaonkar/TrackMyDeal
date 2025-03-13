@@ -20,27 +20,8 @@
 
 
     <main class="container pt-32 pb-16 mx-auto">
-        <section class="max-w-3xl mx-auto text-center animate-fadeIn">
-            <h1 class="text-4xl font-bold tracking-tight mb-4">
-                Track Your Favorite Products
-            </h1>
-            <p class="text-lg text-white mb-8">
-                Get notified when prices drop on products you love
-            </p>
-            
-            <div class="flex gap-4 max-w-xl mx-auto mb-16">
-                <input 
-                    type="text" 
-                    placeholder="Enter product URL (e.g., Amazon, Flipkart)" 
-                    class="border border-gray-300 p-3 rounded-lg w-full"
-                />
-                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-                    Track
-                </button>
-            </div>
-        </section>
-
-        {% include "CustomerPages/populardeals.html" %}
+        {% include "components/trackproduct.html" %}
+        {% include "components/populardeals.html" %}
     </main>
 </body>
 </html>

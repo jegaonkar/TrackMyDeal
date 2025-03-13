@@ -27,12 +27,12 @@ Follow these steps to set up the project:
 
 2. **Clone the repository**:
    ```bash
-   git clone https://github.com/jegaonkar/GasUtilityService
+   git clone https://github.com/jegaonkar/trackmydeal
    ```
 
 3. **Navigate to the project directory**:
    ```bash
-   cd GasUtilityService
+   cd trackmydeal
    ```
 
 4. **Apply migrations**:

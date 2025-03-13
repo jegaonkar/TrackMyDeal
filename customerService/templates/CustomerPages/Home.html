@@ -1,33 +1,13 @@
-{% extends './Base.html'%}
+{% extends "./Base.html" %}
 
 {% block title %}
 Home
 {% endblock %}
 
 {% block content %}
-<div class="flex flex-col justify-center items-center mt-16 md:flex-row md:space-x-4">
-  <div class="container text-center">
-    <p class="font-bold mb-8 text-2xl text-gray-200">Handle Your Gas Services</p>
-
-    <div class="mt-8 flex flex-row items-center space-x-4 w-full max-w-2xl md:space-x-6">
-
-      <a href="/customer/service/" aria-label="Submit a service request" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 text-center w-full">
-          <div class="flex flex-col items-center">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Submit Request</h3>
-              <p class="text-gray-600 mb-4">Request gas utility services or report an issue.</p>
-              <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300" role="button">Submit Request</button>
-          </div>
-      </a>
-  
-  
-      <a href="/customer/trackservice/" aria-label="Track service requests" class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 text-center w-full">
-          <div class="flex flex-col items-center">
-              <h3 class="text-xl font-semibold text-gray-800 mb-2">Track Requests</h3>
-              <p class="text-gray-600 mb-4">View the status of your gas utility requests.</p>
-              <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300" role="button">Track Requests</button>
-          </div>
-      </a>
-  </div>
-  </div>
-</div>
+<main class="container pb-16 mx-auto ">
+    {% include "components/carousel.html" %}
+    {% include "components/trackproduct.html" %}
+    {% include "components/populardeals.html" %}
+</main>
 {% endblock %}

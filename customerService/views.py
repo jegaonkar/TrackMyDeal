@@ -7,20 +7,7 @@ from django.contrib import messages
 from .models import *
 
 def indexPage(request):
-    sample_deals = [
-        {"name": "iPhone 14", "price": "$799", "image_url": "https://via.placeholder.com/150", "link": "#"},
-        {"name": "Samsung Galaxy S23", "price": "$699", "image_url": "https://via.placeholder.com/150", "link": "#"},
-        {"name": "Sony Headphones", "price": "$199", "image_url": "https://via.placeholder.com/150", "link": "#"},
-    ]
-    return render(request, 'index.html', {'sample_deals': sample_deals})
-    
-def popularDeals(request):
-    sample_deals = [
-        {"name": "iPhone 14", "price": "$799", "image_url": "https://via.placeholder.com/150", "link": "#"},
-        {"name": "Samsung Galaxy S23", "price": "$699", "image_url": "https://via.placeholder.com/150", "link": "#"},
-        {"name": "Sony Headphones", "price": "$199", "image_url": "https://via.placeholder.com/150", "link": "#"},
-    ]
-    return render(request, 'CustomerPages/populardeals.html', {'sample_deals': sample_deals})
+    return render(request, 'index.html') 
 
 def logoutView(request):
     logout(request)
