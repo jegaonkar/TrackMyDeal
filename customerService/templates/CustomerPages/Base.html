@@ -10,18 +10,17 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-700 lg:px-10 xl:px-20" >
+  <body class="bg-gray-700">
     <!-- Header / Navbar -->
     <nav class="bg-gray-800 p-4 text-white sticky top-0 z-50">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="/customer/home/" class="text-xl font-bold">Trackmydeal.com</a>
+        <a href="/customer/home/" class="text-xl font-bold">Gas Utility</a>
 
         <div class="flex-grow flex justify-start space-x-8">
           <span class="p-2"></span>
           <a href="/customer/service/" class="text-white hover:text-gray-300 font-semibold">Submit Request</a>
           <a href="/customer/trackservice/" class="text-white hover:text-gray-300 font-semibold">Track Requests</a>
         </div>
-      
 
         <div class="flex items-center space-x-4">
           <span class="text-white">Welcome, {{ request.user.first_name.capitalize }} {{ request.user.last_name.capitalize }}</span>
@@ -37,6 +36,11 @@
           <!-- Page content here -->
         {% endblock %}
       </div>
-    </main>
+    </main>`
+
+    <script>
+        {% block script %}
+        {% endblock %}
+    </script>
   </body>
 </html>
